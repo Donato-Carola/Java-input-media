@@ -130,21 +130,72 @@
 // Scrivi un programma Java che,  dati in input da tastiera due numeri che rappresentano base e altezza, 
 //stampi il valore dell'area di un triangolo (base*altezza/2)
 
+// import java.util.Scanner;
+
+// public class main{
+//     public static void main(String[] args) {
+//         Scanner scan=new Scanner(System.in);
+
+//         System.out.println("inserisci base");
+//         double base = scan.nextDouble();
+
+//         System.out.println("inserisci altezza");
+//         double altezza = scan.nextDouble();
+     
+//         double area = (base*altezza) / 2;
+
+//         System.out.println("l'area è " + area);
+        
+//     }
+// }
+
+//! Esercizio 6
+
+// Scrivi un programma Java che chieda all'utente  di scegliere tra due numeri 
+// (0 per calcolare l'area di un triangolo e 1 per l'area di un quadrato) e, in base a quale figura geometrica ha scelto, 
+// chiedere i dati mancanti e stampare l'area della figura geometrica richiesta.
+
+// Esempio
+
+// Se l'utente sceglie 0, chiedere di inserire base e altezza, calcolare l'area (base*altezza/2)  e stamparla.
+
+// Se l'utente sceglie 1, chiedere inserire il valore del lato, calcolare  l'area (lato*lato)  e stamparla.
+
 import java.util.Scanner;
 
 public class main{
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
+       
+        System.out.println("inserisci 0 se vuoi calcolare l'area del triangolo altrimenti inserisci 1 per calcolare l'area del quadrato");
+        int scelta = scan.nextInt();
 
-        System.out.println("inserisci base");
-        double base = scan.nextDouble();
+       
 
-        System.out.println("inserisci altezza");
-        double altezza = scan.nextDouble();
-     
-        double area = (base*altezza) / 2;
+        if(scelta == 0){
+            System.out.println("inserisci base del triangolo (se con la virgola inserisci la virgola per i decimali)");
+            double base = scan.nextDouble();
 
-        System.out.println("l'area è " + area);
+            System.out.println("inserisci altezza del triangolo (se con la virgola inserisci la virgola per i decimali)");
+            double altezza = scan.nextDouble();
+
+            double area = (base * altezza) / 2;
+
+          System.out.println("l'area del triangolo è:" + area);
+
+
+        }else{
+            System.out.println("inserisci lato del quadrato (se con la virgola inserisci la virgola per i decimali)");
+            double primoLato = scan.nextDouble();
+
+            System.out.println("inserisci  secondo lato del quadrato (se con la virgola inserisci la virgola per i decimali)");
+            double secondoLato = scan.nextDouble();
+
+            double area = (primoLato * secondoLato);
+
+          System.out.println("l'area del quadrato è:" + area);
+        }
+       
         
     }
 }
