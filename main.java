@@ -61,3 +61,24 @@
 //Scrivi un programma Java che prende due numeri da tastiera e stampa 
 //“I numeri inseriti sono uguali” se i due numeri sono uguali e viceversa stampa “I numeri inseriti sono diversi”.
 
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("inserisci primo nuemro");
+       int a = scan.nextInt();
+
+       System.out.println("inserisci secondo numero");
+       int b = scan.nextInt();
+
+       if(a==b){
+        System.out.println("i due numeri sono uguali");
+       }else{
+        System.out.println("i due nuemri sono diversi");
+       }
+
+
+    }
+}
