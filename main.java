@@ -98,27 +98,54 @@
 
 // Febbraio ha 28 giorni
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class main{
-    public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+// public class main{
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner (System.in);
 
-        System.out.println("inserisci numero del mese");
-        int a = scan.nextInt();
+//         System.out.println("inserisci numero del mese");
+//         int a = scan.nextInt();
 
-     if(a==1){
-        System.out.println("è Gennaio ed ha 31 giorni");
-     }else if (a==2){
-        System.out.println(" è Febbraio ed ha 29 giorni");
-     }else if (a==3){
-        System.out.println("è Marzo ed ha 31 giorni");
-     }else{
-        System.out.println("gli altri mesi");
-     }
+//      if(a==1){
+//         System.out.println("è Gennaio ed ha 31 giorni");
+//      }else if (a==2){
+//         System.out.println(" è Febbraio ed ha 29 giorni");
+//      }else if (a==3){
+//         System.out.println("è Marzo ed ha 31 giorni");
+//      }else{
+//         System.out.println("gli altri mesi");
+//      }
      
 
 
 
+//     }
+// }
+
+//! esercizio 5
+
+// Esercizio 5
+
+// Scrivi un programma Java che,  dati in input da tastiera due numeri che rappresentano base e altezza, 
+//stampi il valore dell'area di un triangolo (base*altezza/2)
+
+import java.util.Scanner;
+
+public class main{
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+
+        System.out.println("inserisci base");
+        double base = scan.nextDouble();
+
+        System.out.println("inserisci altezza");
+        double altezza = scan.nextDouble();
+     
+        double area = (base*altezza) / 2;
+
+        System.out.println("l'area è " + area);
+        
     }
 }
+
