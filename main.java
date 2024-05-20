@@ -18,8 +18,6 @@ public class main{
       
     int d = (a + b + c) / 3 ;
 
-    
-
     System.out.println("la media è " + d);
 
    }
